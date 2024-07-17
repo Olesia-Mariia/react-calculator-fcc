@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #efd6ac;
+  color: white;
+}
+
+#app {
+  width: 100vw;
+}
+
+.calculator {
+  background-color: #000;
+  width: 330px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+.calculator .display {
+  height: 90px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  overflow: auto;
+}
+.calculator .display .formula {
+  font-size: 1.5rem;
+  color: #f06071;
+}
+.calculator .display .input-output {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.calculator .keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.calculator .keyboard button {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+}
+.calculator .keyboard button:hover,
+.calculator .keyboard button:focus {
+  color: black;
+  border: 2px solid #8d8b8b;
+}
+.calculator .keyboard .wide-btn {
+  width: 160px;
+}
+.calculator .keyboard .clear {
+  background-color: #c44900;
+}
+.calculator .keyboard .operator {
+  background-color: #432534;
+}
+.calculator .keyboard .number {
+  background-color: #04151f;
+}
+.calculator .keyboard .equal-btn {
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #183a37;
+}/*# sourceMappingURL=index.css.map */

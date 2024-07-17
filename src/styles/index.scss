@@ -1,0 +1,96 @@
+// Variables
+$bg-color: #efd6ac;
+$numbers-btn-color: #04151f;
+$equal-btn-color: #183a37;
+$operators-btn-color: #432534;
+$clear-btn-color: #c44900;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: $bg-color;
+  color: white;
+}
+
+#app {
+  width: 100vw;
+}
+
+.calculator {
+  background-color: #000;
+  width: 330px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+
+  .display {
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    overflow: auto;
+
+    .formula {
+      font-size: 1.5rem;
+      color: #f06071;
+    }
+
+    .input-output {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    button {
+      cursor: pointer;
+      width: 80px;
+      height: 80px;
+      font-size: 2rem;
+      font-weight: 700;
+      border: 1px solid black;
+      outline: none;
+      color: white;
+    }
+
+    button:hover,
+    button:focus {
+      color: black;
+      border: 2px solid #8d8b8b;
+    }
+
+    .wide-btn {
+      width: 160px;
+    }
+
+    .clear {
+      background-color: $clear-btn-color;
+    }
+
+    .operator {
+      background-color: $operators-btn-color;
+    }
+
+    .number {
+      background-color: $numbers-btn-color;
+    }
+
+    .equal-btn {
+      height: 160px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $equal-btn-color;
+    }
+  }
+}

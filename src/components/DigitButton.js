@@ -6,8 +6,9 @@ const DigitButton = ({ id, digit, dispatch }) => {
   return (
     <button
       id={id}
-      className={digit === "0" ? "wide-btn number" : "number"}
+      className="number"
       onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } })}
+      style={digit === "0" ? { width: "160px" } : {}}
     >
       {digit}
     </button>

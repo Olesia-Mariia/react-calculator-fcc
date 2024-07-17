@@ -46,46 +46,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
-    button {
-      cursor: pointer;
-      width: 80px;
-      height: 80px;
-      font-size: 2rem;
-      font-weight: 700;
-      border: 1px solid black;
-      outline: none;
-      color: white;
-    }
-    
-    button:hover,
-    button:focus {
-      color: black;
-      border: 2px solid #8d8b8b;
-    }
-    
-    .wide-btn {
-      width: 160px;
-    }
     
     .clear {
-      background-color: $clear-btn-color;
+      @include button($clear-btn-color, 160px, 80px);
     }
     
     .operator {
-      background-color: $operators-btn-color;
+      @include button($operators-btn-color, 80px, 80px);
     }
     
     .number {
-      background-color: $numbers-btn-color;
+      @include button($numbers-btn-color, 80px, 80px);
     }
     
     .equal-btn {
-      height: 160px;
+      @include button($equal-btn-color, 80px, 160px);
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $equal-btn-color;
     }
   }
 }

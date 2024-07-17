@@ -42,7 +42,22 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
-.calculator .keyboard button {
+.calculator .keyboard .clear {
+  cursor: pointer;
+  width: 160px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+  background-color: #c44900;
+}
+.calculator .keyboard .clear:hover, .calculator .keyboard .clear:focus {
+  color: black;
+  border: 2px solid #8d8b8b;
+}
+.calculator .keyboard .operator {
   cursor: pointer;
   width: 80px;
   height: 80px;
@@ -51,28 +66,42 @@ body {
   border: 1px solid black;
   outline: none;
   color: white;
+  background-color: #432534;
 }
-.calculator .keyboard button:hover,
-.calculator .keyboard button:focus {
+.calculator .keyboard .operator:hover, .calculator .keyboard .operator:focus {
   color: black;
   border: 2px solid #8d8b8b;
 }
-.calculator .keyboard .wide-btn {
-  width: 160px;
-}
-.calculator .keyboard .clear {
-  background-color: #c44900;
-}
-.calculator .keyboard .operator {
-  background-color: #432534;
-}
 .calculator .keyboard .number {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+  color: white;
   background-color: #04151f;
 }
+.calculator .keyboard .number:hover, .calculator .keyboard .number:focus {
+  color: black;
+  border: 2px solid #8d8b8b;
+}
 .calculator .keyboard .equal-btn {
+  cursor: pointer;
+  width: 80px;
   height: 160px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+  background-color: #183a37;
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #183a37;
+}
+.calculator .keyboard .equal-btn:hover, .calculator .keyboard .equal-btn:focus {
+  color: black;
+  border: 2px solid #8d8b8b;
 }/*# sourceMappingURL=index.css.map */

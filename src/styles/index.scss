@@ -1,9 +1,4 @@
-// Variables
-$bg-color: #efd6ac;
-$numbers-btn-color: #04151f;
-$equal-btn-color: #183a37;
-$operators-btn-color: #432534;
-$clear-btn-color: #c44900;
+@import "./variables.scss";
 
 * {
   box-sizing: border-box;
@@ -62,29 +57,29 @@ body {
       outline: none;
       color: white;
     }
-
+    
     button:hover,
     button:focus {
       color: black;
       border: 2px solid #8d8b8b;
     }
-
+    
     .wide-btn {
       width: 160px;
     }
-
+    
     .clear {
       background-color: $clear-btn-color;
     }
-
+    
     .operator {
       background-color: $operators-btn-color;
     }
-
+    
     .number {
       background-color: $numbers-btn-color;
     }
-
+    
     .equal-btn {
       height: 160px;
       position: absolute;
